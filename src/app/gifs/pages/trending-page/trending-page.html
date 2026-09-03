@@ -1,0 +1,20 @@
+<!-- <div class="py-5">
+  <app-gif-list [imageUrls]="gitsService.trendingGifs()"></app-gif-list>
+</div> -->
+
+
+<div class="h-screen overflow-y-scroll grid grid-cols-2 md:grid-cols-4 gap-4 pt-5"
+(scroll)="onScroll($event)"
+#groupDiv
+>
+  @for (group of gitsService.trendingGifsGroup(); track $index) {
+    <div class="grid gap-4">
+        @for (gif of group; track $index) {
+            <div>
+                <img class="h-full w-full object-cover" [src]="gif.url" [alt]="gif.title">
+            </div>
+        }
+    </div>
+  }
+</div>
+
