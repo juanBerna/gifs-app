@@ -2,6 +2,22 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.4.
 
+# Temas vistos con Angular.
+
+Manejo de rutas dinámicas
+
+Manejo de LocalStorage
+
+Observables a Señales
+
+Reutilización de componentes
+
+Peticiones HTTP
+
+Manejo de caché
+
+Mapeo de información
+
 ## Development server
 
 To start a local development server, run:
